@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
+import type { AxiosResponse } from "axios";
 import type { FC } from "react";
 
 
