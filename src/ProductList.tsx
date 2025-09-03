@@ -84,16 +84,16 @@ const [dateValue, setDateValue] = useState('');
   const value = e.target.value;
   setDateValue(value);
   if (!value) {
-    setProducts(dummyData); // reset when input is cleared
+    setProducts(dummyData);
     return;
   }
 
-  const selectedDate = new Date(value); // YYYY-MM-DD from <input type="date">
+  const selectedDate = new Date(value); 
 
   const filtered = dummyData.filter(item => {
     if (!item.Date) return false;
 
-    const itemDate = new Date(item.Date); // also YYYY-MM-DD
+    const itemDate = new Date(item.Date); 
 
     switch (dateFilterType) {
       case "dateBefore":
